@@ -2,11 +2,15 @@
   "name": "rollup-plugin-ractive-template",
   "version": "0.0.1",
   "description": "Rollup plugin to compile RactiveJS templates",
+  "keywords": "rollup-plugin ractive ractivejs template handlebars",
   "main": "index.js",
   "repository": {
     "url": "git@github.com:ustop/rollup-plugin-ractive-template.git",
     "type": "git"
   },
   "author": "Ivan Wills",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ractive": "^0.8.0"
+  }
 }
