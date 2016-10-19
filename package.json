@@ -11,6 +11,7 @@
   "author": "Ivan Wills",
   "license": "MIT",
   "dependencies": {
-    "ractive": "^0.8.0"
+    "ractive": "^0.8.0",
+    "rollup-pluginutils": "^1.5.2"
   }
 }
