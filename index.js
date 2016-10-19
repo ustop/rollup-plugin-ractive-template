@@ -1,9 +1,9 @@
 
-import { createFilter } from 'rollup-pluginutils';
-import Ractive from 'ractive';
+var utils = require('rollup-pluginutils');
+var Ractive = require('ractive');
 
-export default function ( options = {} ) {
-    var filter = createFilter( options.include, options.exclude );
+module.exports = function ( options = {} ) {
+    var filter = utils.createFilter( options.include, options.exclude );
 
     return {
         transform ( code, id ) {
@@ -14,7 +14,9 @@ export default function ( options = {} ) {
                 code: function transform (source) {
                     return Ractive.parse(source);
                 },
-                //map: generatedSourceMap
+                map: {
+                    mappings: ''
+                }
             };
         }
     };
